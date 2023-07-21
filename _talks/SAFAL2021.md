@@ -1,5 +1,5 @@
 ---
-title: "PPaying attention to agreement: An MEG study of Hindi split-ergative agreement."
+title: "Paying attention to agreement: An MEG study of Hindi split-ergative agreement."
 collection: talks
 type: "Presentation"
 permalink: /talks/SAFAL2021
