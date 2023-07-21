@@ -68,7 +68,7 @@ for row, item in talks.iterrows():
     
     md_filename = str(item.date) + "-" + item.url_slug + ".md"
     html_filename = str(item.date) + "-" + item.url_slug 
-    year = item.date[:4]
+    year = item.date
     
     md = "---\ntitle: \""   + item.title + '"\n'
     md += "collection: talks" + "\n"
@@ -88,6 +88,9 @@ for row, item in talks.iterrows():
     
     if len(str(item.location)) > 3:
         md += 'location: "' + str(item.location) + '"\n'
+
+    if len(str(item.description)) > 3:
+        md += 'description: "' + str(item.description) + '"\n'
            
     md += "---\n"
     
@@ -96,8 +99,7 @@ for row, item in talks.iterrows():
         md += "\n[More information here](" + item.talk_url + ")\n" 
         
     
-    if len(str(item.description)) > 3:
-        md += "\n" + html_escape(item.description) + "\n"
+   
         
         
     md_filename = os.path.basename(md_filename)
