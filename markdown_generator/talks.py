@@ -89,8 +89,8 @@ for row, item in talks.iterrows():
     if len(str(item.location)) > 3:
         md += 'location: "' + str(item.location) + '"\n'
 
-    if len(str(item.description)) > 3:
-        md += 'description: "' + str(item.description) + '"\n'
+    #if len(str(item.description)) > 3:
+        #md += 'description: "' + str(item.description) + '"\n'
            
     md += "---\n"
     
